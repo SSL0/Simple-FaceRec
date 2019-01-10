@@ -24,10 +24,9 @@ Now you need to install **dlib** library:
     
 
 # Add new person
-In the project folder create a directory named "train": `mkdir train`. Next, run the file "new_person.py", then put the person in front of the camera that you want to add for recognition, the program will ask for his name. 
+In the project folder create a directory named "train": `mkdir train`. Next, run the file **new_person.py**, then put the person in front of the camera that you want to add for recognition, the program will ask for his name. 
 
 # Recognition
 Run the file "main.py", the console will display the names of people who are in front of the camera.
 
-# P.S
-Sorry for english!) I used google translate.
+**P.S Sorry for english!) I used google translate.**
