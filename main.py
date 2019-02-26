@@ -8,7 +8,7 @@ path = './train'
 
 def mainFunc():
     print("Start Capture")
-    id = [] #Массив с именами людей внесенных в базу
+    id = [] #Array with the names of people entered in the database
 
     for f in os.listdir(path):
         name = str(f).replace(".jpg", "")
@@ -20,9 +20,9 @@ def mainFunc():
     
 
     sp = dlib.shape_predictor('./shape_predictor_68_face_landmarks.dat') 
-    facerec = dlib.face_recognition_model_v1('./dlib_face_recognition_resnet_model_v1.dat') #Загружаем обученные модели
+    facerec = dlib.face_recognition_model_v1('./dlib_face_recognition_resnet_model_v1.dat') #Load the trained models
 
-    #Часть для извлечения дескриптора(вещи которая помогает распознавать лица) из каждой фотографии 
+    #Part for extracting the descriptor (the thing that helps recognize faces) from each photo
     detector = dlib.get_frontal_face_detector()
     face_descriptor = []
     imagePaths = [os.path.join(path,f) for f in os.listdir(path)]  
@@ -38,10 +38,10 @@ def mainFunc():
         face_descriptor.append(facerec.compute_face_descriptor(img, shape))
     #END 
 
-    cap = cv2.VideoCapture(0) #Включаем вебку при помощи opencv
+    cap = cv2.VideoCapture(0) #Turn on webcam with opencv
     
     while(True):
-        ret, img = cap.read() #Берем изображение с вебки
+        ret, img = cap.read() #We take the image from the webcam
         dets_webcam = detector(img, 1)
         for k, d in enumerate(dets_webcam):
             shape = sp(img, d)
