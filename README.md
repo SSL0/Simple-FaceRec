@@ -18,11 +18,9 @@ http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
         
 **Now you need to install dlib library:**
 
-`git clone https://github.com/davisking/dlib.git`
-
-`cd dlib`
-
-`python3 setup.py install`
+    git clone https://github.com/davisking/dlib.git
+    cd dlib
+    python3 setup.py install
     
     
 
