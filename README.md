@@ -12,11 +12,9 @@ http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
     
 **Download modules:**
 
-`pip3 install opencv-python`
-    
-`pip3 install scikit-image`
-
-`pip3 install scipy`
+ pip3 install opencv-python 
+ pip3 install scikit-image
+ pip3 install scipy
         
 **Now you need to install dlib library:**
 
