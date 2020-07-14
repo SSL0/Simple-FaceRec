@@ -29,5 +29,3 @@ In the project folder create a directory named "train": `mkdir train`. Next, run
 
 # Recognition
 Run the file "main.py", the console will display the names of people who are in front of the camera.
-
-**P.S Sorry for english!) I used google translate.**
